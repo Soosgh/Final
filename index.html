@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+\
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Stylesheet" href="./assets/css/main.css" />
+
+    <title> Depot &#8211; A Contemporary Theme for eCommerce</title>
+</head>
+
+<body>
+    <!--Start Header-->
+    <header class="header">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="left_nav">
+                    <ul>
+                        <li>
+                            <a href="#"> HOME</a>
+                        </li>
+                        <li>
+                            <a href="#"> SHOP</a>
+                        </li>
+                        <li>
+                            <a href="#"> PAGES</a>
+                        </li>
+                        <li>
+                            <a href="#"> ELEMENTS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Logo">DEPOT</div>
+                <div class="right_nav">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div style="display:flex ;gap:8px ;">CART <div style="color:lightgray ;">($0)</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div style="display:flex ;gap:5px ;"><i class=" fa-regular fa-user"></i>
+                                    LOGIN
+                            </a>
+                </div>
+                </li>
+                <li> <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+
+                <li>
+                    <a><i class="fa-solid fa-bars"></i></a>
+                </li>
+                </ul>
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <section class="carousel">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="slide-content">
+                    <div class="text ">
+                        <h2>THINK DIFFERENT</h2>
+                        <p style="background-color: #F5F5F5;">Lorem ipsum dolor sit, amet consectetur <br>adipisicing
+                            elit. Asperiores, iure</p>
+                    </div>
+                    <img src="assets/img/blackchair.png" alt="Black Chair">
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide-content">
+                    <div class="text">
+                        <h2>PREMUIM COMFORT</h2>
+                        <p style="background-color: #F5F5F5;">Lorem ipsum dolor sit, amet consectetur <br>adipisicing
+                            elit. Asperiores, iure</p>
+                    </div>
+                    <img src="./assets/img/lights.png" alt="Lights">
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide-content">
+                    <div class="text">
+                        <h2>Contemporary Design</h2>
+                        <p style="background-color: #F5F5F5;">Lorem ipsum dolor sit, amet consectetur <br>adipisicing
+                            elit. Asperiores, iure</p>
+                    </div>
+                    <img src="./assets/img/woodchair.png" alt="Wood Chair">
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="pictures">
+            <div class="picture active" onclick="showSlide(1)">
+                <span>01</span>
+                <div class="line">__</div>
+            </div>
+            <div class="picture" onclick="showSlide(2)">
+                <span>02</span>
+                <div class="line">__</div>
+            </div>
+            <div class="picture" onclick="showSlide(3)">
+                <span>03</span>
+                <div class="line">__</div>
+            </div>
+        </div>
+
+    </section>
+    <section class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'ALL')" id="defaultOpen">All</button>
+                    <button class="tablinks" onclick="openCity(event, 'HOMEDECORE')">HOME DECOR</button>
+                    <button class="tablinks" onclick="openCity(event, 'LIGHTING')">LIGHTING</button>
+                    <button class="tablinks" onclick="openCity(event, 'DECORATION')">DECORATION</button>
+                    <button class="tablinks" onclick="openCity(event, 'VASES')">VASES</button>
+                    <button class="tablinks" onclick="openCity(event, 'BASICS')">BASICS</button>
+                </div>
+                <div class="filter">FILTER
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+            </div>
+
+            <div id="ALL" class="tabcontent">
+
+                <div class="cards" style="display:flex ; flex-wrap:wrap; gap: 51px;">
+
+                    <div class="card " style="padding-bottom: 50px;  ">
+                        <img src="./assets/img/h1-product-8-550x550.jpg" style=" height:350px;width:300px ;  " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+
+                                </div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Basket With Handles</div>
+                                <div class="price">$160</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-7.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+                                    <div class="discount">19%</div>
+                                </div>
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Flower Vase</div>
+                                <div class="total-price"
+                                    style="display:flex;align-items:center; color: #A0A0A0; justify-content: center;">
+                                    <div class="price">$210</div>
+                                    <div class="discount-price" style="text-decoration: line-through;">$170</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-6-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+
+                            <div class="up">
+                                <div class="in_same_row " style="padding:35px ;">
+
+                                </div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Deco Accessory</div>
+                                <div class="price">$15</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-5-550x550.jpg" style=" height:350px;width:300px ; " />
+
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+
+                                </div>
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Wall Clock</div>
+
+                                <div class="price">$110</div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-4-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row" style="padding:35px ;">
+
+                                </div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Newspaper Storage</div>
+                                <div class="price">$90</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-3-1-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row" style="padding:35px ;"></div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Pottery Vase</div>
+                                <div class="price">$60</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-2-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="discount">19%</div>
+                                </div>
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Rose Holdback</div>
+                                <div class="total-price"
+                                    style="display:flex;align-items:center; color: #A0A0A0; justify-content: center;">
+                                    <div class="price">$30</div>
+                                    <div class="discount-price" style=" text-decoration: line-through;">$24</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-1.jpg" style=" height:350px;width:300px ; ">
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+                                </div>
+
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+                            </div>
+                            <div class="img-des">
+
+                                <div class="img-tit">Table Lamp</div>
+                                <div class="price">$240</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="HOMEDECORE" class="tabcontent">
+
+                <div class="cards" style="display:flex ; flex-wrap:wrap; gap: 51px;">
+
+                    <div class="card " style="padding-bottom: 50px;  ">
+                        <img src="./assets/img/h1-product-8-550x550.jpg" style=" height:350px;width:300px ;  " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+                                </div>
+
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Basket With Handles</div>
+                                <div class="price">$160</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-7.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+                                    <div class="discount">19%</div>
+                                </div>
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Flower Vase</div>
+                                <div class="price">$210</div>
+                                <div class="discount-price">$170</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-6-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+
+                            <div class="up">
+                                <div class="in_same_row" style="padding:35px ;"></div>
+                                <div class=" quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Deco Accessory</div>
+                                <div class="price">$15</div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-5-550x550.jpg" style=" height:350px;width:300px ; " />
+
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+                                    <div class="discount">19%</div>
+                                </div>
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Wall Clock</div>
+                                <div class="price">$110</div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-4-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row" style="padding:30px ;"></div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+                            </div>
+                            <div class="img-des">
+
+                                <div class="img-tit">Newspaper Storage</div>
+                                <div class="price">$90</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-3-1-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row" style="padding:30px ;"></div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Pottery Vase</div>
+                                <div class="price">$60</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-2-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="discount">19%</div>
+                                </div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Rose Holdback</div>
+                                <div class="price">$30</div>
+                                <div class="discount-price">$24</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-1.jpg" style=" height:350px;width:300px ; ">
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+                                </div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Table Lamp</div>
+                                <div class="price">$240</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="LIGHTING" class="tabcontent">
+
+                <div class="cards" style="display:flex ; flex-wrap:wrap; gap: 51px;">
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-2-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="discount">19%</div>
+                                </div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Rose Holdback</div>
+                                <div class="price">$30</div>
+                                <div class="discount-price">$24</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div id="DECORATION" class="tabcontent">
+
+                <div class="cards" style="display:flex ; flex-wrap:wrap; gap: 51px;">
+                    <div class="card " style="padding-bottom: 50px;  ">
+                        <img src="./assets/img/h1-product-8-550x550.jpg" style=" height:350px;width:300px ;  " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+                                </div>
+
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Basket With Handles</div>
+                                <div class="price">$160</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-2-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="discount">19%</div>
+                                </div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Rose Holdback</div>
+                                <div class="price">$30</div>
+                                <div class="discount-price">$24</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="VASES" class="tabcontent">
+
+                <div class="cards" style="display:flex ; flex-wrap:wrap; gap: 51px;">
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-7.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+                                    <div class="discount">19%</div>
+                                </div>
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Flower Vase</div>
+                                <div class="price">$210</div>
+                                <div class="discount-price">$170</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-2-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="discount">19%</div>
+                                </div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Rose Holdback</div>
+                                <div class="price">$30</div>
+                                <div class="discount-price">$24</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="BASICS" class="tabcontent">
+
+                <div class="cards" style="display:flex ; flex-wrap:wrap; gap: 51px;">
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-6-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+
+                            <div class="up">
+                                <div class="in_same_row" style="padding:35px ;"></div>
+                                <div class=" quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Deco Accessory</div>
+                                <div class="price">$15</div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-5-550x550.jpg" style=" height:350px;width:300px ; " />
+
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+                                    <div class="discount">19%</div>
+                                </div>
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Wall Clock</div>
+                                <div class="price">$110</div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-4-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row" style="padding:30px ;"></div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+
+                                </div>
+                            </div>
+                            <div class="img-des">
+
+                                <div class="img-tit">Newspaper Storage</div>
+                                <div class="price">$90</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <hr class=" solid">
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="list">
+                    <div class="footer_tit">Customer Service
+                    </div>
+                    <nav>
+                        <a href="#"> Help & Contact Us</a>
+                        <a href="#"> Returns & Refunds</a>
+                        <a href="#">Online Stores</a>
+                        <a href="#"> Terms & Conditions</a>
+
+                    </nav>
+                </div>
+                <div class="list">
+                    <div class="footer_tit">Company</div>
+                    <nav>
+                        <a href="#"> What We Do</a>
+                        <a href="#"> Available Services</a>
+                        <a href="#"> Latest Posts</a>
+                        <a href="#"> FAQs</a>
+
+                    </nav>
+                </div>
+                <div class="list">
+                    <div class="footer_tit">Social Media</div>
+                    <nav>
+                        <a href="#"> Twitter</a>
+                        <a href="#"> Instagram</a>
+                        <a href="#"> Tumblr</a>
+                        <a href="#"> Pinterest</a>
+
+                    </nav>
+                </div>
+                <div class="list">
+                    <div class="footer_tit">Profile</div>
+                    <nav>
+                        <a href="#"> My Account</a>
+                        <a href="#"> Checkout</a>
+                        <a href="#">Order Tracking</a>
+                        <a href="#"> Help & Support</a>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <hr class="solid">
+    <div class="rights">
+
+
+        <div class="one">© 2021 Qode Interactive, All Rights Reserved</div>
+        <div class="two">
+            <div class="Follow_Us">Follow Us</div>
+            <div class="icons">
+
+                <a href="#" style="text-decoration:none ;color: black;"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" style="text-decoration:none ;color: black;"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="#" style="text-decoration:none ;color: black;"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
