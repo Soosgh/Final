@@ -5,11 +5,477 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <link rel="stylesheet" href="./assets/css/product.css">
+
+    <title> Depot &#8211; A Contemporary Theme for eCommerce</title>
 </head>
 
 <body>
 
+    <header class="header">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="Logo">DEPOT</div>
+                <div class="left_nav">
+                    <ul>
+                        <li>
+                            <a href="#"> HOME</a>
+                        </li>
+                        <li>
+                            <a href="#"> SHOP</a>
+                        </li>
+                        <li>
+                            <a href="#"> PAGES</a>
+                        </li>
+                        <li>
+                            <a href="#"> ELEMENTS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right_nav">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div style="display:flex ;gap:8px ;">CART <div style="color:lightgray ;">($0)</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-heart"></i>
+                        <li>
+                            <a><i class="fa-solid fa-bars"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+        <div style="background-color:#F8F8F8	 ;">
+            <div class="container" style="background-color:#F8F8F8	 ;">
+                <div
+                    style="color:#A0A0A0 ;background-color:#F8F8F8	 ;padding :50px  100px ;font-family: monospace;font-size: 16px;">
+                    Home / With
+                    Sidebar / Basics, Home
+                    Decor / Deco Accessory
+                </div>
+            </div>
+        </div>
+
+        <section class="product-info" style="background-color:#F8F8F8	 ; padding-bottom: 50px;">
+            <div class="container" style="background-color:#F8F8F8	 ;">
+                <div class="left-img" style="background-color:#F8F8F8	 ;">
+
+                    <div class="img-column">
+                        <img src="./assets/img/h1-product-6-550x550.jpg" />
+                        <img src="./assets/img/h1-product-6-550x550.jpg" />
+                        <img src="./assets/img/h1-product-6-550x550.jpg" />
+                        <img src="./assets/img/h1-product-6-550x550.jpg" />
+                    </div>
+                    <div class="img-flex"><img src="./assets/img/h1-product-6-550x550.jpg" /></div>
+
+
+                </div>
+                <div class="right-info" style="background-color:#F8F8F8	 ;">
+                    <div class="img-tit" style="background-color:#F8F8F8	 ;">Deco Accessory</div>
+                    <div class="img-price" style="background-color:#F8F8F8	 ;">$15</div>
+                    <div class="img-rate" style="background-color:#F8F8F8	 ;">
+                        <div class="rating" style="background-color:#F8F8F8	 ;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="custom-review" style="background-color:#F8F8F8	 ;">(1 customer review)</div>
+                    </div>
+                    <div class="img-paragh" style="background-color:#F8F8F8	 ;">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. In ut ullamcorper
+                        leo,<br> eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient<br> montes
+                        nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.</div>
+                    <div class="quantity-button" style="background-color:#F8F8F8	 ;">
+                        <div class="quantity">
+                            QUANTITY
+                        </div>
+                        <div class="counter">
+                            <button id="increment-btn"><i class="fa-solid fa-caret-left"></i></button>
+                            <div id="counter-value">0</div>
+                            <button id="decrement-btn"><i class="fa-solid fa-caret-right"></i></button>
+                        </div>
+                        <button style="background-color: black;
+                        color: white;
+                        font-family: monospace;
+                        padding: 5px;
+                        padding: 6.5px;">
+                            ADD TO CART
+                        </button>
+                    </div>
+                    <div class="addtowishlist" style="background-color:#F8F8F8	 ;">
+                        <button style="background-color: #F8F8F8;
+                        border: 2px solid #F8F8F8;
+                        font-family: monospace;
+                        font-size: 13px;
+                        padding: 40px;"> <i class="fa-solid fa-heart"></i>
+                            Add to wishlist </button>
+                    </div>
+                    <div class="categories_info" style="     background-color: #F8F8F8;
+                    padding-left: 40px;
+                    font-family: monospace;
+                    font-size: 11px;">
+                        SKU: 006 <br>
+                        Categories: Basics, Home Decor<br>
+                        Tags: Decoration, Modern<br>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="tabs">
+
+            <div class="tab" style="padding-left: 150px ;">
+                <button class="tablinks" onclick="openCity(event, 'London') " id="defaultOpen">Description</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Additional information</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">review(1)</button>
+            </div>
+            <hr class="solid" style="    border: #b2b0b07d .2px solid;">
+            <div class="container">
+                <div id="London" class="tabcontent">
+                    <h3 style="    padding: 25px 0px; font-family:monospace ;font-size:20px">Description
+                    </h3>
+                    <p style="font-size:13px ;  font-family:monospace ;color: #A0A0A0;">Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipiscing elit. In ut
+                        ullamcorper leo, eget euismod
+                        orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus.
+                        Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu
+                        volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent
+                        turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames.
+                    </p>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                    <h3 style="    padding: 25px 0px; font-family:monospace ;font-size:20px">Additional information</h3>
+                    <table style="width:27%;color:#A0A0A0;
+                    font-family: monospace;">
+
+                        <tr>
+                            <td>
+                                Weight</td>
+                            <td> 2 kg</td>
+
+                        </tr>
+                        <tr>
+                            <td>Dimensions</td>
+                            <td>10 × 10 × 15 cm</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Color</td>
+                            <td>
+                                Beige, Black</td>
+
+                        </tr>
+                        <tr>
+                            <td>Material</td>
+                            <td>
+
+                                Metal, Wood</td>
+
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="Tokyo" class="tabcontent">
+                    <h3>1 review for Basket With Handles</h3>
+                    <div class="review">
+                        <img src="./assets/img/reviewer.png" />
+                        <div class="review_script">
+                            <div class="rating" style="background-color:#F8F8F8	 ;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>Nikole Burke – 08.02.2017.</span>
+                            <span>Very good!</span>
+
+
+                        </div>
+                    </div>
+                    <div class="form-sec" style="">
+                        <h3 style="font-family:monospace;text-transform: uppercase;">Add a review</h3>
+                        <p> Your email address will not be published. Required fields are marked *
+                        </p>
+                        <p>Your rating *</p>
+                        <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                        <form>
+                            <label for="review">
+                                Your review *
+
+                            </label>
+                            <br>
+                            <input type="text" id="review" name="review" style="margin-bottom: 2px;">
+                            <br>
+                            <label for="name">
+                                Name *
+                            </label>
+                            <br>
+                            <input type="name" id="name" name="name">
+                            <br>
+                            <label for="name">
+                                Email *
+                            </label>
+                            <br>
+                            <input type="email" id="email" name="email">
+                            <br>
+                            <div class="checkbox" style="display:flex ; align-items:center">
+                                <input type="checkbox" id=" Save" name="save" value="save">
+
+                                <label for="save">
+                                    Save my name, email, and website in this browser for the next time I comment.
+                                </label>
+                            </div>
+
+                            <br>
+                            <input type="submit" value="submit"
+                                style="padding:10px 40px;background-color: black;color:#F5F5F5 ; font-family: monospace;">
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+        <hr class="solid">
+        <section class="Related-Product">
+            <div class="container">
+                <div class="cards" style="display:flex ; flex-wrap:wrap; gap: 51px;">
+
+                    <div class="card " style="padding-bottom: 50px;  ">
+                        <img src="./assets/img/h1-product-8-550x550.jpg" style=" height:350px;width:300px ;  " />
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+
+                                </div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Basket With Handles</div>
+                                <div class="total-price"
+                                    style="display:flex;align-items:center; color: #A0A0A0; justify-content: center;">
+                                    <div class="price">$160</div>
+                                    <div class="add_to_cart">ADD TO CART</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-7.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+                                    <div class="discount">19%</div>
+                                </div>
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Flower Vase</div>
+                                <div class="total-price"
+                                    style="display:flex;align-items:center; color: #A0A0A0; justify-content: center;">
+                                    <div class="price">$210</div>
+                                    <div class="discount-price" style="text-decoration: line-through;">$170</div>
+                                    <div class="add_to_cart">ADD TO CART</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-6-550x550.jpg" style=" height:350px;width:300px ; " />
+                        <div class="card-text">
+
+                            <div class="up">
+                                <div class="in_same_row " style="padding:35px ;">
+
+                                </div>
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Deco Accessory</div>
+                                <div class="total-price"
+                                    style="display:flex;align-items:center; color: #A0A0A0; justify-content: center;">
+                                    <div class="price">$15</div>
+                                    <div class="add_to_cart">ADD TO CART</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="card" style="padding-bottom: 50px; ;">
+                        <img src="./assets/img/h1-product-5-550x550.jpg" style=" height:350px;width:300px ; " />
+
+                        <div class="card-text">
+                            <div class="up">
+                                <div class="in_same_row">
+                                    <div class="new">NEW</div>
+
+                                </div>
+
+                                <div class="quick_lock">
+                                    <DIV style="background-color:black;color:#F5F5F5;padding:2px">QUICK LOOK</DIV>
+                                    <i class="fa-solid fa-heart"
+                                        style="background-color:gray;color:#F5F5F5 ; border:2px gray ;padding:2px"></i>
+                                </div>
+                            </div>
+                            <div class="img-des">
+                                <div class="img-tit">Wall Clock</div>
+                                <div class="total-price"
+                                    style="display:flex;align-items:center; color: #A0A0A0; justify-content: center;">
+                                    <div class="price">$110</div>
+                                    <div class="add_to_cart">ADD TO CART</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+
+</body>
+
+</html>
+
+</section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="row" style="background-color:black;">
+            <div class="list">
+                <div class="footer_tit">Customer Service
+                </div>
+                <nav>
+                    <a href="#"> Help & Contact Us</a>
+                    <a href="#"> Returns & Refunds</a>
+                    <a href="#">Online Stores</a>
+                    <a href="#"> Terms & Conditions</a>
+
+                </nav>
+            </div>
+            <div class="list">
+                <div class="footer_tit">Company</div>
+                <nav>
+                    <a href="#"> What We Do</a>
+                    <a href="#"> Available Services</a>
+                    <a href="#"> Latest Posts</a>
+                    <a href="#"> FAQs</a>
+
+                </nav>
+            </div>
+            <div class="list">
+                <div class="footer_tit">Social Media</div>
+                <nav>
+                    <a href="#"> Twitter</a>
+                    <a href="#"> Instagram</a>
+                    <a href="#"> Tumblr</a>
+                    <a href="#"> Pinterest</a>
+
+                </nav>
+            </div>
+            <div class="list">
+                <div class="footer_tit">Profile</div>
+                <nav>
+                    <a href="#"> My Account</a>
+                    <a href="#"> Checkout</a>
+                    <a href="#">Order Tracking</a>
+                    <a href="#"> Help & Support</a>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<hr class="solid">
+<div class="rights">
+
+
+    <div class="one">© 2021 Qode Interactive, All Rights Reserved</div>
+    <div class="two">
+        <div class="Follow_Us" style="color:#A0A0A0; background-color:black">Follow Us</div>
+        <div class="icons">
+
+            <a href="#" style="text-decoration:none ; 
+   color:#A0A0A0"><i class="fa-brands fa-twitter" style="background-color:black ;"></i></a>
+            <a href="#" style="text-decoration:none ; 
+   color:#A0A0A0"> <i class="fa-brands fa-instagram" style="background-color:black ;"></i></a>
+            <a href="#" style="text-decoration:none ; 
+   color:#A0A0A0"><i class="fa-brands fa-facebook-f" style="background-color:black ;"></i></a>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/js/main.js"></script>
 </body>
 
 </html>
