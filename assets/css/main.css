@@ -722,3 +722,11 @@ hr.solid {
         /* تصغير النص */
     }
 }
+
+/*//////////////////////////////////////////////////////*/
+/*Product page*/
+.navbar-brand {
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 600;
+}
