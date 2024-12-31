@@ -1,0 +1,724 @@
+@import './base.css';
+
+* {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+
+    /* الحد الأقصى للعرض */
+    width: 100%;
+    /* يجعل العنصر يتكيف مع عرض الشاشة */
+    margin: 0 auto;
+    /* لمركزته أفقياً */
+    padding: 30px 15px;
+    /* إضافة تباعد داخلي، مع ضبطه للشاشات الصغيرة */
+    box-sizing: border-box;
+    /* تجنب تجاوز المحتوى للحواف */
+
+}
+
+.header .left_nav {
+
+
+    font-size: 13px;
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+
+
+
+}
+
+.header .left_nav a {
+    color: black;
+}
+
+.header .left_nav ul {
+    gap: 40px;
+}
+
+.header .left_nav li :hover {
+    color: grey;
+
+}
+
+.header .Logo {
+    font-size: 30px;
+    letter-spacing: 7px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.header .right_nav {
+    font-size: 13px;
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+
+
+}
+
+.header .right_nav a {
+    color: black;
+}
+
+.header .right_nav ul {
+    gap: 27px;
+}
+
+.header .right_nav li :hover {
+    color: grey;
+
+}
+
+/* تصميم خاص للشاشات المتوسطة */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 10px;
+        /* تقليل الحشو للشاشات المتوسطة */
+    }
+
+    .header .left_nav ul,
+    .header .right_nav ul {
+        gap: 20px;
+        /* تقليل المسافات بين العناصر */
+    }
+
+    .header .Logo {
+        font-size: 25px;
+        /* تصغير الخط لتناسب الشاشة */
+    }
+}
+
+/* تصميم خاص للشاشات الصغيرة */
+@media (max-width: 480px) {
+    .header {
+        padding: 15px 5px;
+        /* تقليل الحشو أكثر للشاشات الصغيرة */
+    }
+
+    .header .Logo {
+        font-size: 20px;
+        /* تصغير حجم الخط أكثر */
+        letter-spacing: 3px;
+        /* تقليل المسافة بين الأحرف */
+    }
+
+    .header .left_nav ul,
+    .header .right_nav ul {
+        gap: 10px;
+        /* تقليل المسافات بشكل إضافي */
+    }
+
+    .header .left_nav,
+    .header .right_nav {
+        font-size: 12px;
+        /* تصغير حجم النص */
+    }
+}
+
+/*----------------------------------------------------------------------*/
+hr.solid {
+    border-top: 1px solid #F5F5F5;
+}
+
+/*--------------------------------------------------------------------*/
+.footer {
+    padding: 100px 120px 100px 0px;
+
+    justify-content: flex-start;
+}
+
+.footer .footer_tit {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.footer .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.footer .list nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.footer .list nav a {
+    color: #A0A0A0;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* لإضافة حركة سلسة */
+
+
+
+}
+
+/* عند التمرير بالفأرة على الرابط */
+.footer .list nav a:hover::before {
+    content: " →";
+    /* إضافة السهم */
+    color: #A0A0A0;
+    ;
+    /* لون السهم */
+}
+
+.rights {
+    display: flex;
+    padding: 15px 140px;
+    justify-content: space-between;
+
+}
+
+.rights .one {
+    font-size: 13px;
+    color: #A0A0A0;
+}
+
+.rights .two {
+    display: flex;
+    gap: 7px;
+    font-size: 13px;
+}
+
+.rights .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* تصميم للشاشات المتوسطة */
+@media (max-width: 768px) {
+    .footer {
+        padding: 60px 15px;
+        /* تقليل الحشو */
+    }
+
+    .footer .footer_tit {
+        font-size: 16px;
+        /* تصغير حجم النص */
+    }
+
+    .rights {
+        flex-direction: column;
+        /* تكديس العناصر رأسياً */
+        align-items: flex-start;
+    }
+
+    .rights .two {
+        gap: 5px;
+    }
+}
+
+/* تصميم للشاشات الصغيرة */
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 10px;
+        /* تقليل الحشو للشاشات الصغيرة */
+    }
+
+    .footer .footer_tit {
+        font-size: 14px;
+        /* تصغير النصوص أكثر */
+    }
+
+    .rights {
+        flex-direction: column;
+        align-items: center;
+        /* محاذاة للعناصر في المنتصف */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .rights .two {
+        gap: 3px;
+    }
+
+    .rights .icons {
+        gap: 10px;
+        /* تقليل المسافات بين الأيقونات */
+    }
+}
+
+/*------------------------------------------------------------------*/
+.carousel {
+    background-color: #F0F0F0;
+
+    height: 600px;
+    width: calc(100% - 120px);
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+}
+
+.slide-content img {
+    width: 60%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.text {
+    font-family: monospace;
+    text-align: left;
+    background-color: #F5F5F5;
+    font-size: 17px;
+    padding-top: 25%;
+    padding-left: 10%;
+    width: 30%;
+
+    line-height: 1.5;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.text h2 {
+    animation-name: animate__backInLeft;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 10px;
+    background-color: #F5F5F5;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Dots and fading animations remain the same */
+.pictures {
+    position: absolute;
+    top: 50%;
+    /* مركز الصفحة عموديًا */
+    left: 10px;
+    /* التبويبات على الجانب الأيسر */
+    transform: translateY(-50%);
+    /* لضبط المحاذاة للمنتصف */
+    display: flex;
+    flex-direction: column;
+    /* ترتيب التبويبات عموديًا */
+    gap: 20px;
+    /* مسافة بين كل تبويب */
+    transition: all 0.5s ease-in-out;
+}
+
+.picture {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* مسافة بين الرقم والخط */
+    cursor: pointer;
+    color: #bbb;
+    /* لون النص الافتراضي */
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.picture .line {
+    flex: .1;
+    /* يجعل الخط يمتد */
+    height: 30px;
+    /* ارتفاع الخط */
+    color: #000;
+
+    /* لون الخط */
+    transition: all 0.5s ease-in-out;
+    /* تأثير عند التفاعل */
+}
+
+.picture.active,
+.picture:hover {
+    color: #000;
+    /* لون النص النشط */
+}
+
+
+
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*----------------------------------------------------------------------*/
+
+.tabs {
+    padding: 30px 0px;
+}
+
+.tabs .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs .filter {
+    font-size: 14px;
+    font-family: monospace;
+    color: #A0A0A0;
+    gap: 10px;
+    margin-top: 45px;
+}
+
+.tabs .filter:hover {
+    color: #000;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    padding: 100px 0px 50px 0px;
+    background-color: white;
+
+
+}
+
+
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: white;
+    color: #A0A0A0;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #000;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+
+    border-top: none;
+}
+
+
+
+.card {
+    position: relative;
+    width: 300px;
+    /* لضبط عرض الصورة */
+    height: 370px;
+
+    /* لضبط ارتفاع الصورة */
+    overflow: hidden;
+    /* لمنع العناصر من الخروج عن حدود البطاقة */
+}
+
+/* الصورة */
+.card img {
+
+    object-fit: cover;
+    /* لضمان عرض الصورة بدون تمدد */
+    position: relative;
+    z-index: 1;
+    /* ضع الصورة في الخلفية */
+}
+
+/* الحاوية العلوية */
+.cards .card .up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* اجعل العرض يغطي البطاقة */
+    display: flex;
+    flex-direction: column;
+    /* يوزع العناصر بين اليسار واليمين */
+
+    background-color: transparent;
+    z-index: 2;
+    gap: 262px;
+    font-family: monospace;
+    font-size: 17px;
+    /* اجعلها فوق الصورة */
+}
+
+/* العنصر NEW */
+.new {
+    background-color: transparent;
+
+    padding: 10px 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+}
+
+/* عنصر الخصم */
+.discount {
+    background-color: transparent;
+    /* لون خلفية الخصم */
+
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.in_same_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 15px;
+}
+
+/* العنصر Quick Look */
+.quick_lock {
+
+
+
+
+    font-size: 13px;
+    display: flex;
+
+    opacity: 0;
+    /* اجعلها مخفية افتراضيًا */
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+    align-self: center;
+
+
+}
+
+/* عند التحويم: يظهر Quick Look */
+.card:hover .quick_lock {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+}
+
+.img-des {
+    text-align: center;
+    padding: 15px;
+
+    font-family: monospace;
+
+}
+
+
+.img-des .img-tit {
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2px;
+
+
+}
+
+
+.price {
+    color: #A0A0A0;
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 3px;
+
+
+
+
+}
+
+.add_to_cart {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.total-price:hover {
+    text-align: center;
+}
+
+.card:hover .price,
+.card:hover .discount-price {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover .add_to_cart {
+    visibility: visible;
+    opacity: 1;
+    color: #A0A0A0;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.pictures .picture {
+    z-index: 1;
+}
+
+.pictures .picture.line::after:hover {
+    content: "_______";
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+    background-color: transparent;
+
+}
+
+
+/* للأجهزة اللوحية (الشاشات أقل من 768px) */
+@media (max-width: 768px) {
+    .carousel {
+        height: 450px;
+        /* تقليل ارتفاع الكاروسيل */
+        width: calc(100% - 40px);
+        /* تقليل الحواف */
+    }
+
+    .slide-content {
+        flex-direction: column;
+        /* تكديس العناصر عموديًا */
+        justify-content: center;
+        /* تمركز العناصر */
+        padding: 10px;
+    }
+
+    .slide-content img {
+        width: 80%;
+        /* تقليل عرض الصورة */
+        max-height: 400px;
+        /* تحديد أقصى ارتفاع */
+    }
+
+    .text {
+        padding-top: 10%;
+        padding-left: 0;
+        width: 90%;
+        /* جعل النص يأخذ مساحة أكبر */
+        text-align: center;
+        /* محاذاة النص للمنتصف */
+    }
+
+    .text h2 {
+        font-size: 24px;
+        /* تقليل حجم النص */
+    }
+}
+
+/* للهواتف الذكية (الشاشات أقل من 480px) */
+@media (max-width: 480px) {
+    .carousel {
+        height: 300px;
+        /* تقليل ارتفاع الكاروسيل */
+    }
+
+    .slide-content img {
+        width: 100%;
+        /* جعل الصورة تأخذ العرض بالكامل */
+        max-height: 300px;
+        /* ضبط الحد الأقصى للارتفاع */
+    }
+
+    .text {
+        font-size: 14px;
+        /* تصغير النص */
+        line-height: 1.3;
+        padding-top: 5%;
+    }
+
+    .text h2 {
+        font-size: 20px;
+        /* تصغير حجم العنوان */
+    }
+
+    .pictures {
+        top: 10px;
+        /* تغيير مكان النقاط */
+        left: 5px;
+        gap: 10px;
+    }
+
+    .picture {
+        font-size: 12px;
+        /* تصغير النص داخل النقاط */
+    }
+}
+
+/* تعديل البطاقات */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* البطاقة تأخذ العرض بالكامل */
+        height: auto;
+        /* ضبط الارتفاع تلقائيًا */
+    }
+
+    .card img {
+        max-height: 250px;
+        /* تقليل ارتفاع الصورة */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        /* تكييف البطاقة للعرض الصغير */
+        height: auto;
+    }
+
+    .card img {
+        max-height: 200px;
+        /* تقليل ارتفاع الصورة أكثر */
+    }
+
+    .quick_lock {
+        font-size: 12px;
+        /* تصغير النص */
+    }
+}
